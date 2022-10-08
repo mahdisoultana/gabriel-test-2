@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply font-Inter;
+}
+@layer components {
+  .reset-img {
+    @apply w-full h-full  bg-cover object-cover   block;
+  }
+}
+.style-scroll::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track,
+.style-scroll::-webkit-scrollbar-track {
+  /* color of the tracking area */
+  background: #293354;
+}
+
+.style-scroll::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: #3d486d;
+  cursor: pointer;
+  border-radius: 20px; /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+}
+.style-scroll::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: #1d2746;
+  border-radius: 20px; /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+}
+
+/*dark scroll bar  */
+.style-scroll-dark::-webkit-scrollbar {
+  /* color of the tracking area */
+  width: 7px;
+  border-radius: 20px;
+}
+.style-scroll-dark::-webkit-scrollbar-track {
+  /* color of the tracking area */
+  @apply bg-blue-xdark;
+}
+.style-scroll-dark::-webkit-scrollbar-thumb {
+  /* color of the tracking area */
+  @apply bg-blue-medium;
+  border-radius: 20em;
+}
+.style-scroll-dark::-webkit-scrollbar-thumb:hover {
+  /* color of the tracking area */
+  @apply bg-blue-light;
+}
